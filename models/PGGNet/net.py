@@ -279,7 +279,7 @@ class BaseModel(nn.Module):
         return super(BaseModel, self).__str__() + f"\nNbr of trainable parameters: {nbr_params}"
 
 
-class PGGNet(BaseModel):
+class PGG(BaseModel):
     def __init__(self, num_classes, in_channels=2, freeze_bn=False, **_):
         super(PGGNet, self).__init__()
 
@@ -387,5 +387,5 @@ class PGGNet(BaseModel):
 
 
 def PGGNet(num_classes):
-    model = PGGNet(num_classes=num_classes)
+    model = PGG(num_classes=num_classes)
     return model
