@@ -1,0 +1,25 @@
+{   
+    "num_classes": 5,
+    "batch_size": 32,
+    "num_epoch": 200,
+    "lr": 0.0001,
+    "weight_decay": 1e-4,
+    "momentum": 0.95,
+    "train_list": "Dataset/train.txt",
+    "test_list": "Dataset/val.txt",
+
+    "pretrain": {
+        "start": true,
+        "model": "vgg16"
+    },
+
+    "train_model": {
+        "round" : ["1"],
+        "select" : 0,
+        "model": ["PGGNet"]
+    },
+    "save_model": {
+        "save": true,
+        "save_path": "saved/"
+    }
+}

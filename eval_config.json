@@ -1,0 +1,13 @@
+{   
+    "num_classes": 5,
+    "img_txt": "Dataset/test.txt",
+    "train_model": {
+        "round" : ["1"],
+        "select" : 0,
+        "model": ["PGGNet"]
+    },
+    "save_model": {
+        "save": true,
+        "save_path": "saved/"
+    }
+}
